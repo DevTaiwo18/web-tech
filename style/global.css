@@ -1,0 +1,3688 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: var(--orange);
+}
+
+a:hover{
+    color: var(--deep-orange);
+}
+
+
+
+.btn{
+    border: none;
+    background: var(--orange);
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn:hover{
+    background: var(--deep-orange);
+    color: #fff;
+}
+/* END OF RESET */
+
+
+
+/* VARIABLE */
+
+:root{
+    --orange: #ca9c5e;
+    --deep-orange: #b37627;
+    --deep-green: #0b1517;
+    --transparent-deep-green: #0b151793;
+
+    /* boxes */
+    --width: 90vw;
+
+}
+
+
+/* 
+====================================
+====================================
+GLOBAL STYLING ===> NOTE: This are the
+stylings that are common to every or
+multiple pages. E.g, Header, Hero & 
+Footer
+====================================
+====================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+        /* 
+=====================
+=====================
+SCROLL UP: This is the 
+floating icon that users
+click to jump to the
+top of their current page
+=====================
+=====================
+  */
+
+
+    .scroll-up{
+        background: var(--orange);
+        width: fit-content;
+        padding: 10px;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+        position: fixed;
+        box-shadow: 0 0 5px #fff;
+        right: 2rem;
+        z-index: 888;
+        bottom: 2rem;
+    }
+
+    .fa-circle-up{
+        color: #fff;
+        font-size: 2rem;
+
+    }
+
+
+
+
+
+  /* 
+=====================
+=====================
+END OF SCROLL UP
+=====================
+=====================
+  */
+
+
+
+
+
+
+
+
+
+
+  /* 
+=====================
+=====================
+HEADER
+=====================
+=====================
+  */
+
+
+
+header{
+    position: sticky;
+    top: 0;
+    padding: 1rem;    
+    z-index: 999;
+    background: #000;
+}
+
+
+
+header a{
+    color: #fff;
+}
+
+
+
+.header-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+}
+
+
+.header-left a{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+.logo span{
+    color: var(--orange);
+    
+}
+
+
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.menu-items>a, .menu-items>li{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.menu-items>a:hover, .menu-items li span:hover{
+    color: var(--orange);
+    cursor: pointer;
+
+}
+
+
+.resources span{
+    color: #fff;
+}
+
+.resources:hover .sub-menu {
+    height: 200px;
+    padding: 2rem 0;
+
+}
+
+
+
+.resources:hover .fa-chevron-down{
+    rotate: 180deg;
+}
+
+
+
+.fa-chevron-down{
+    /* this icon(s) is the drop-down icon at the header */
+    font-size: 10px;
+    transition: all  0.5s ease;
+}
+
+
+
+
+.sub-menu{
+    position: absolute;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease;
+    border: none;
+    height: 0;
+    /* padding: 0; */
+  
+    overflow: hidden;
+    background: #000;
+
+}
+
+
+
+
+
+.sub-menu li{
+    padding: 1rem 3rem;
+    color: var(--deep-green) ;
+    border: #0b1517 ;
+
+}
+
+.sub-menu a{
+    color: var(--deep-orange);
+    font-size: 1.2rem;
+}
+
+
+
+.sub-menu li:hover, .sub-menu li:hover a{
+    cursor: pointer;
+    background: var(--deep-orange);
+    color: #fff;
+       
+}
+
+
+
+
+
+/* header right */
+
+
+.header-right a{
+    margin: 0 0.1rem;
+}
+
+
+.harmburger{
+    display: none;
+    background: var(--orange);
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem ;
+}
+
+
+  /* 
+=====================
+=====================
+END OF HEADER
+=====================
+=====================
+  */
+
+
+
+
+
+
+
+
+
+   /* 
+=====================
+=====================
+HERO
+=====================
+=====================
+  */
+
+  .hero{
+    padding: 4rem 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1), #0b15179f, rgba(0, 0, 0, 0.141)), url(../ASSETS/images/home-hero-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+.hero-con{
+    width: 80vw ;
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-text{
+    width: fit-content;
+    display: flex;
+    width: 70%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: #fff;
+    
+
+}
+
+.hero-con img{
+    width: 5rem;
+    margin: auto;
+    
+
+}
+
+.hero h1{
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero p{
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-ctas{
+    height: fit-content;
+    padding: 1rem 0;
+}
+
+
+
+.hero-explore-btn{
+    background: transparent;
+    border: 2px solid var(--orange);
+}
+
+.hero-explore-btn:hover{
+    background: var(--deep-orange)
+}
+
+.hero-order-btn{
+    border: 2px #fff solid;
+}
+
+
+
+  
+  /* 
+=====================
+=====================
+END OF HERO
+=====================
+=====================
+  */
+
+
+
+
+
+
+
+
+
+  
+/* 
+======================
+======================
+  RECIPES SECTION
+======================
+======================
+*/
+
+
+
+.recipes{
+    padding: 2rem 0;
+}
+
+.recipes-con{
+    width: var(--width);
+    margin: auto;
+}
+
+.templates-des{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.templates-des p{
+    font-size: 1.2rem;
+}
+
+.recipes-con h2{
+    font-size: 4rem;
+}
+
+.recipes-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.recipe{
+    border: solid 1px var(--deep-green);
+    padding: 0.4rem !important;
+    height: fit-content;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.recipe-img{
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 200px;
+    
+}
+
+.first-recipe .recipe-img, 
+.second-recipe .recipe-img,
+.third-recipe .recipe-img,
+.fourth-recipe .recipe-img,
+.fifth-recipe .recipe-img,
+.sixth-recipe .recipe-img,
+.seventh-recipe .recipe-img,
+.eighth-recipe .recipe-img
+{
+    
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+
+.first-recipe .recipe-img{
+    background: url(https://th.bing.com/th/id/OIP.zyoJZrtxCbz90gwUySHpgQHaFj?pid=ImgDet&rs=1) !important;
+    width: 100%;
+
+}
+
+.second-recipe .recipe-img{
+    background: url(https://th.bing.com/th/id/R.b14b19c1212de952f70039261d9429b1?rik=esEj4BXtnv1dPQ&pid=ImgRaw&r=0) !important;
+}
+
+
+.third-recipe .recipe-img{
+    background: url(https://th.bing.com/th/id/OIP.Ovw-XZmRsOy9FhqldA3iuAHaGB?pid=ImgDet&rs=1) !important;
+}
+
+
+
+.fourth-recipe .recipe-img{
+    background: url(https://th.bing.com/th/id/OIP.F5JP3C2ZJi--S5hnVNyZBgHaGB?pid=ImgDet&rs=1) !important;
+}
+
+
+
+.fifth-recipe .recipe-img{
+    background: url(https://th.bing.com/th/id/OIP.llk0wUluZx3HmUXDHQvBjgHaIR?pid=ImgDet&rs=1) !important;
+}
+
+
+
+.sixth-recipe .recipe-img{
+    background: url(https://th.bing.com/th/id/OIP.MD65s_yk5_bLKzT5ZKtKHAHaFj?pid=ImgDet&rs=1) !important;
+}
+
+
+
+.seventh-recipe .recipe-img{
+    background: url(../ASSETS/images/fashion-template.png) !important;
+    background-size: contain !important;
+}
+
+
+.eighth-recipe .recipe-img{
+    background: url(../ASSETS/images/freelance-template.png) !important;
+    
+    background-size: contain !important;
+}
+
+
+
+
+
+
+.recipe-texts{
+    margin-bottom: 1rem;
+    color: var(--deep-green);
+    
+}
+
+.recipe-texts h3{
+    font-size: 1.4rem !important;
+}
+
+.recipe-texts p{
+    font-size: 1.3rem;
+}
+
+.recipe-btn{
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0 !important;
+    font-size: 1rem !important;
+}
+
+.recipes-con>div{
+    margin-top: 3rem;
+
+}
+
+.recipes-con>div .btn{
+    width: 30%;
+    padding: 1rem 0;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+
+
+/* 
+======================
+======================
+  END OF RECIPES SECTION
+======================
+======================
+*/
+
+
+
+
+
+/* 
+======================
+======================
+  ERROR SECTION
+======================
+======================
+*/
+
+
+
+.error{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.error div h1{
+    font-size: 13rem;
+}
+
+
+.error div span{
+    font-size: 2rem;
+}
+
+.error div p{
+    font-size: 2rem;
+}
+
+
+
+
+/* 
+======================
+======================
+  END OF ERROR SECTION
+======================
+======================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* 
+=====================
+=====================
+FOOTER
+=====================
+=====================
+  */
+
+    footer{
+        border: 2px solid;
+        margin-top: 2rem;
+        color: #fff;
+        background: #000;
+        
+    }
+
+    .footer-con{
+        width: var(--width);
+        margin: 0 auto;
+        gap: 3rem;
+        display: flex;
+        padding: 2rem 0;
+        border-bottom: solid 1px var(--orange);
+    }
+
+    .footer-left{
+        display: flex;
+        gap: 3rem;
+    }
+
+    .footer-left .quick-links{
+        width: 50%;
+        line-height: 1.5;
+    }
+
+    
+.footer-right{
+    width: 40%;
+}
+
+.footer-right span{
+    color: var(--deep-orange);
+}
+
+    footer h3, footer p{
+        margin-bottom: 1rem;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-icons span a{
+        border: 2px solid var(--orange);
+        color: var(--orange);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        width: 2rem;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 50%;
+        font-size: 1rem;
+    }
+
+   .social-icon:hover{
+    background: var(--orange);
+    color: #000;
+   }
+
+
+    /* footer right */
+    footer input, .footer-right .btn{
+        font-size: 1.1rem;
+        padding: 1rem;
+        display: block;
+        margin-bottom: 6px;
+        width: 100%;
+
+
+    }
+
+    footer input:focus{
+        caret-color: var(--orange);
+        color: var(--deep-orange);
+    }
+
+
+    .footer-bottom{
+        padding: 1rem 0;
+        margin: auto;
+        max-width: var(--width);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+   /* 
+=====================
+=====================
+END OF FOOTER
+=====================
+=====================
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 
+  ==========================
+  ==========================
+   RESPONSIVENESS
+   ==========================
+   ==========================
+    */
+
+
+
+  /*
+  =====================
+  =====================
+    TABLET ==> 1100
+  =====================
+  =====================
+  */
+
+  @media screen and (max-width: 1100px) {
+
+    .header-right{
+        display: none;
+    }
+
+    .hero-text{
+        width: 100% !important;
+    }
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
+    .hero-text p{
+        font-size: 1.3rem;
+    }
+
+   
+
+
+    /* taste tablet */
+    .taste-right h2{
+        font-size: 2rem !important;
+        margin-top: 0.5rem !important;
+    }
+    /* end of taste tablet  */
+
+
+
+    /* RESERVATION */
+    .reserve-means{
+        flex-direction: column;
+        
+    }
+
+    .reserve-left{
+        text-align: center;
+    }
+    /* EDN OF RESERVTION */
+
+
+    /* RECIPES */
+    .recipes-con .recipes-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .templates-des {
+        width: 98% !important;
+        
+    }
+
+    .templates-des h2{
+        font-size: 2.5rem;
+    }
+    /* END OF RECIPES */
+
+
+
+         /* SIGN UP PAGE */
+        .sign-up{
+            width: 70%;
+        }
+        /* END OF SIGN UP PAGE */
+
+
+        /* ORDER PAGE */
+        .form-field{
+            width: 70% !important;
+        }
+
+        .order-form input{
+            padding: 1rem ;
+        }
+        /* END OF ORDER PAGE */
+
+
+
+        /* ARTICLES */
+        .article-con{
+            flex-direction: column ;
+        }
+
+        .article-left, .article-right{
+            width: 100% !important;
+        }
+
+        .article-right h5{
+            font-size: 1rem;
+        }
+
+
+        .post-left{
+            width: 400px;
+    
+        }
+        /* END OF ARTICLES */
+
+
+    
+  /* footer tablet*/
+  .footer-con{
+    display: block;
+  }
+
+
+  .footer-left{
+    gap: 10rem;
+  }
+
+  .footer-right{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+
+
+  .footer-right input{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* end of footer tablet */
+  }
+
+   /*
+  ===========================
+  ===========================
+    END OF TABLET ==> 1100
+  ==========================
+  ==========================
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+    /*
+  ===========================
+  ===========================
+    MEDIUM ==> 900px
+  ==========================
+  ==========================
+  */
+
+  @media screen and (max-width: 900px) {
+    
+    .recipes-con .recipes-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    
+
+  }
+
+
+
+
+
+    /*
+  ===========================
+  ===========================
+    END OF MDDIUM ==> 900PX
+  ==========================
+  ==========================
+  */
+
+
+
+
+
+
+
+
+
+
+    /*
+  =====================
+  =====================
+    MOBILE ==> 790px
+  =====================
+  =====================
+  */
+
+
+
+
+  @media screen and (max-width: 790px) {
+
+    .header-mid{
+        display: none;
+    }
+
+    .harmburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .harmburger:hover{
+        background: var(--deep-orange);
+    }
+
+
+    /* taste mobile */
+    .taste-con{
+        flex-direction: column;
+    }
+
+    .taste-left, .taste-right{
+        width: 100% !important;
+        text-align: center;
+        
+    }
+
+    .taste-right h2{
+        margin-bottom: 2rem !important;
+    }
+
+    /* end of taste mobile */
+
+
+    .img-text-child {
+        width: 70% !important;
+        margin: auto;
+    }
+
+
+
+    /* recipes mobile */
+    .recipes-con .recipes-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recipes-con>div .btn{
+        width: 50% !important;
+    }
+    /* end of recipes mobile */
+
+
+
+    /* reservation mobile */
+
+    .reservation-con{
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .reservation .reservation-con h3{
+        font-size: 2rem;
+    }
+
+    .reserve-left{
+        width: 100% !important;
+        
+        
+    }
+
+    .reserve-right{
+        text-align: center;
+        height: fit-content !important;
+    }
+
+    .reserve-location{
+        margin-bottom: 3rem !important;
+    }
+
+   
+    .reserve-time{
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-bottom: 1rem !important;
+    }
+
+    
+
+    .reserve-right .reserve-btn{
+        width: 100%;
+        bottom: 0 ;
+        font-size: 1.3rem;
+        border-radius: 0;
+        padding: 1rem 0;
+        left: 0 ;
+    }
+
+    /* end of reservation mobile */
+
+
+
+
+
+    
+         /* SIGN UP PAGE */
+         .sign-up{
+            width: 90% !important;
+        }
+
+
+        .sign-up-form{
+            padding: 2rem;
+        }
+        /* END OF SIGN UP PAGE */
+
+
+
+
+
+        /* ORDER PAGE */
+        .form-field{
+            width: 90% !important;
+        }
+
+        .order-form input{
+            padding: 1rem ;
+        }
+        /* END OF ORDER PAGE */
+
+
+
+
+        /* ARTCILE */
+        .post{
+            flex-direction: column;
+        }
+
+        .post-left{
+            width: 100% !important;
+        }
+        /* END OF ARTICLE */
+
+
+
+
+    /* footer mobile */
+    .footer-left{
+        display: block;
+        text-align: center;
+    }
+
+    .about{
+        margin-bottom: 3rem;
+    }
+
+    .quick-links{
+        margin: auto;
+    }
+
+    .social-icons{
+        width: fit-content;
+        margin: auto;
+    }
+    /* end of footer mobile */
+   
+  }
+
+
+/* 
+====================================
+====================================
+END OF GLOBAL STYLINGS
+====================================
+====================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+====================================
+====================================
+1) HOMEPAGE STYLINGS =====>  NOte: The
+following styles are targeted specifically
+at the elements on the HOMEPAGE 
+====================================
+====================================
+*/
+
+
+
+/* VARIABLE */
+
+:root{
+    --orange: #ca9c5e;
+    --deep-orange: #b37627;
+    --deep-green: #0b1517;
+    --transparent-deep-green: #0b151793;
+
+    /* boxes */
+    --width: 90vw;
+
+}
+
+
+
+/* 
+======================
+======================
+    TASTE SECTION
+======================
+======================
+*/
+
+.taste{
+    background-color: var(--deep-green);
+    padding: 5rem 0;
+}
+
+.taste-con{
+    width: var(--width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.taste-left{
+    width: 50%;
+}
+
+.taste-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.taste-right{
+    color: var(--orange);
+    width: 50%;
+}
+
+.taste-right p{
+    color: #fff;
+    /* font-size: 1.2rem; */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.taste-right h2{
+    font-size: 3rem;
+    /* margin: 2rem 0; */
+}
+
+.taste-right h4{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    
+}
+
+.taste-btn{
+    background: transparent;
+    border: 2px solid var(--orange);
+    padding: 0.6rem 3rem;
+    margin-top: 1rem;
+    
+}
+
+.taste-btn:hover{
+    background: var(--deep-orange);
+    border: 2px solid var(--orange);
+    color: var(--deep-green);
+}
+
+
+/* 
+======================
+======================
+  END OF TASTE SECTION
+======================
+======================
+*/
+
+
+
+
+
+
+
+/* 
+======================
+======================
+  RESERVATION SECTION
+======================
+======================
+*/
+
+
+
+.reservation{
+    background: var(--deep-green);
+    padding: 4rem 0;
+
+}
+
+.reservation-con{
+    width: var(--width);
+    margin: 0 auto;
+    display: flex;
+    color: #fff;
+    column-gap: 5rem;
+
+}
+
+.reservation-con h3{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.reservation-con p{
+    line-height: 1.3;
+}
+
+.reserve-left h2{
+    font-size: 2rem;
+    color: var(--orange);
+    margin-bottom: 2rem;
+}
+
+.reserve-left p{
+    margin-bottom: 1rem;
+}
+
+.reserve-means{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.reserve-left{
+    width: 60%;
+}
+
+.reserve-right{
+    height: 400px;
+}
+
+.reserve-right .reserve-time{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.reserve-right, .reserve-right>div{
+    border: solid 2px var(--orange);
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.reserve-right>div{
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+}
+
+.reserve-location{
+    margin-bottom: 1rem;
+}
+
+.reserve-btn{
+    display: block;
+    bottom: 2rem;
+    height: 4rem;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+
+
+
+/* 
+======================
+======================
+  END OF RESERVATION SECTION
+======================
+======================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+======================
+======================
+  RECIPES SECTION
+======================
+======================
+*/
+
+
+
+.recipes{
+    padding: 4rem 0;
+}
+
+.recipes-con{
+    width: var(--width);
+    margin: auto;
+}
+
+.recipes-con>h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.recipes-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.recipe{
+    border: solid 1px var(--deep-green);
+    padding: 1rem;
+    height: fit-content;
+    border-radius: 10px 10px 0 0;
+}
+
+.recipe-img{
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 200px;
+}
+
+.first-recipe .recipe-img, 
+.second-recipe .recipe-img,
+.third-recipe .recipe-img,
+.fourth-recipe .recipe-img{
+    
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+
+.first-recipe .recipe-img{
+    background: url(../ASSETS/images/egusi.jfif);
+    width: 100%;
+
+}
+
+.second-recipe .recipe-img{
+    background: url(../ASSETS/images/pepper-soup.jfif);
+}
+
+
+.third-recipe .recipe-img{
+    background: url(../ASSETS/images/pounded-yam.jfif);
+}
+
+
+
+.fourth-recipe .recipe-img{
+    background: url(../ASSETS/images/suya.jfif);
+}
+
+
+
+
+
+.recipe-texts{
+    margin-bottom: 1rem;
+    color: var(--deep-green);
+    
+}
+
+.recipe-texts h3{
+    font-size: 2rem;
+}
+
+.recipe-texts p{
+    font-size: 1.3rem;
+}
+
+.recipe-btn{
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0.8rem 0;
+    font-size: 1.3rem;
+}
+
+.recipes-con>div{
+    margin-top: 3rem;
+
+}
+
+.recipes-con>div .btn{
+    width: 30%;
+    padding: 1rem 0;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+
+
+/* 
+======================
+======================
+  END OF RECIPES SECTION
+======================
+======================
+*/
+
+
+
+
+
+/* 
+===================================
+===================================
+END OF HOMEPAGE
+==================================
+=================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+==============================
+==============================
+2) CONTACT PAGE
+==============================
+==============================
+*/
+
+
+
+/* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION1 --> */
+.section1{
+    width: 100%;
+    border: 8px solid rgb(184,142,87);
+    background-image: url(../ASSETS/images/home-hero-img.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:100%;
+    background-position-y:100%;
+}
+  /* <!-- BEGINNING OF SECTION1-DIV --> */
+.section1-div{
+    padding:12em 10em;
+}
+.section1-div p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+.section1-div h1{
+    font-size:85px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+  /* <!-- END OF SECTION1-DIV-> */
+
+ /* <!-- END OF SECTION1 --> */
+
+/* /////////////////////////////////// */
+
+/* /////////////////////////////////// */
+  /* <!-- BEGINNING OF SECTION2 --> */
+.section2{
+    width: 100%;
+    margin-top: 3em;
+    border: none;
+}
+  /* <!-- BEGINNING OF SECTION2-DIV --> */
+.section2-div{
+    padding:2em 26em;
+}
+
+.section2-div h1{
+    font-size:65px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+
+.section2-div p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+    line-height: 2em;
+}
+  /* <!-- END OF SECTION2-DIV-> */
+
+ /* <!-- END OF SECTION2 --> */
+ /* /////////////////////////////////// */
+
+ /* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION3 --> */
+
+
+
+ 
+
+
+/* SECTION  ONE */
+.section1{
+    padding: 200px 0;
+    border: 5px solid var(--Orange);
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), #0b15179f, rgba(0, 0, 0, 0.141)), url(https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+}
+.sec1-parent h2{
+    font-size: 30px;
+    color: var(--Orange);
+}
+.sec1-parent p{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+
+/* SECTION  TWO */
+.section2{
+    align-items: center;
+    background-color: rgb(0, 0, 4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+.sec2-parent{
+    width: 80%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 2em;
+    row-gap: 3em;
+}
+.sec2-box h2{
+    font-size: 30px;
+    line-height: 1.5;
+}
+.sec2-box p,li{
+    font-size: 18px;
+    line-height: 1.3;
+}
+.sec2-miniboxes-parent{
+    display: flex;
+    gap: 8em;
+}
+.sec2-lunch-minibox,.sec2-dinner-minibox h4{
+    font-size: 23px;
+    line-height: 1.3;
+}
+
+/*  SECTION   THREE */
+.section3{
+    /* height: 90vh; */
+    text-align: center;
+    padding: 250px 0 50px 70px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.section3 .sec3-parent{
+    width: 30%;
+}
+.sec3-parent h4{
+    font-size: 18px;
+}
+.sec3-parent h2{
+    font-size: 72px;
+    line-height: 1;
+}
+.sec3-parent p{
+    font-size: 18px;
+    line-height: 1.3;
+} 
+.sec3-parent button{
+    border: none;
+    border-top: 5px solid var(--Orange);
+    border-bottom: 5px solid var(--Orange);
+    background: transparent;
+    color: #fff;
+    margin: 3em 0 0;
+    padding: 8px 7px;
+    border-radius: 0.2em;
+}
+.sec3-parent button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* SECTION  FOUR */
+.section4{
+    background-color: rgb(5, 5, 10);
+    color: #fff;
+}
+.sec4-parent{
+    display: flex;
+    gap: 2em;
+    padding: 5em 7em;
+}
+.sec4-parent .sec4-left h2{
+    font-size: 25px;
+    margin: 0 0 2em;
+}
+.sec4-parent .sec4-left p{
+    font-size: 18px;
+    line-height: 1.5;
+} 
+
+.sec4-parent form fieldset{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.sec4-parent form fieldset label{
+    font-size: 20px;
+}
+.sec4-parent form fieldset input{
+    width: 100%;
+    height: 8vh;
+    font-size: 18px;
+    margin-bottom: 1.5em;
+    border-radius: 0.5em;
+    outline-color: var(--Orange);
+    padding: 0 4px;
+}
+.sec4-parent form fieldset button{
+    width: 20%;
+    padding: 1em 0.5em;
+    background-color: var(--Orange);
+    border-radius: 0.5em;
+    border: none;
+}
+.sec4-parent form fieldset button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact-btn{
+    text-align: center;
+    
+}
+
+
+
+/* MOBILE RESPONSIVENESS */
+@media  (max-width:1100px) {
+    /* section four 4 */
+    .sec4-parent{
+        padding: 5em;
+    }
+    .sec4-parent form fieldset{
+        width:500px;
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    /* section  two 2 */
+    .sec2-parent{
+        padding: 5em 3em;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .sec2-box p,li{
+        font-size: 16px;
+    }
+    .sec2-miniboxes-parent{
+        justify-content: initial;
+        gap: 5em;
+    }
+
+    /* section  three 3 */
+    .section3{
+        padding: 10em 0 5em 5em;
+    }
+    .section3 .sec3-parent{
+        width: 60%;
+    }
+
+    /* section four 4 */
+    .sec4-parent{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .sec4-parent form fieldset{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:428px) {
+    /* section  one  1 */
+    .section1{
+        padding: 100px 0;
+    }
+
+
+    /* section  two  2 */
+    .section2{
+        padding: 15px;
+        flex-direction: row;
+    }
+    .sec2-parent{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+    .sec2-box h2{
+        font-size: 25px;
+        line-break: loose;
+        flex-wrap: wrap;
+        width: initial;
+    }
+
+
+    
+
+
+    /* section three  3 */
+    .section3{
+        padding: 15px;
+    }
+    .section3 .sec3-parent{
+        width: 100%;
+    }
+    .sec3-parent h2{
+        font-size: 50px;
+    }
+
+
+    /* section  four  4 */
+    .sec4-parent{
+        padding: 15px;
+    }
+    .sec4-parent form fieldset button{
+        width: 25%;
+    }
+}
+
+
+@media (max-width:320px) {
+    /* section  0ne  1 */
+    .section1{
+        padding: 50px 0;
+    }
+
+    /* section  two  2 */
+    .sec2-box h2{
+        line-height: initial;
+        margin-bottom: 0.5em;
+    }
+    .sec2-box:nth-of-type(2){
+        display: none;
+    }
+    .sec2-miniboxes-parent{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .sec2-lunch-minibox,.sec2-dinner-minibox h4{
+        font-size: 20px;
+    }
+
+    /* section  four  4 */
+    .sec4-parent .sec4-left h2{
+        margin: 0 0 1em;
+    }
+    .sec4-parent form fieldset label{
+        font-size: 18px;
+    }
+    .sec4-parent form fieldset input{
+        height: 5vh;
+        border-radius: 0.3em;
+        font-size: 16px;
+    }
+    .sec4-parent form fieldset button{
+        width: 30%;
+        padding: 0.6em 0.5em;
+        border-radius: 0.3em;
+    }
+}
+
+
+
+
+
+
+.section3{
+    margin-top: 2em;
+    width: 100%;
+}
+/* <!-- BEGINNING OF IMG-TEXT-PARENT --> */
+.section3 .img-text-parent{
+    width: var(--width) !important;
+    margin: auto;
+    border: 2px solid rgb(184,142,87);
+    display: flex;
+    padding: 3rem !important;
+    align-items: center;
+    column-gap: 1rem
+    /* justify-content: space-between; */
+    /* padding: 2em 4em; */
+}
+/* <!-- END OF IMG-TEXT-PARENT --> */
+
+/* <!-- BEGINNING OF IMG-TEXT-CHILD --> */
+
+.img-text-child{
+    border: var(--orange) 1px solid;
+    width: 300px;
+    height: 300px;
+}
+
+.img-text-child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.section3 .img-text-child{
+    line-height: 2em;
+    text-align: center;
+}
+.section3 .img-text-child h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(184,142,87);
+    text-align: center;
+}
+.section3 .img-text-child p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+}
+/* <!-- END OF IMG-TEXT-CHILD --> */
+
+/* <!-- END OF SECTION3 --> */
+ /* /////////////////////////////////// */
+
+/* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION4 --> */
+ .section4{
+    width: 100%;
+    border: 8px solid rgb(184,142,87);
+    background-image: url("") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border: none;
+    margin-top: 4em;
+}
+  /* <!-- BEGINNING OF SECTION4-DIV --> */
+.section4-div{
+    padding:1em 2em 1em 40em;
+    text-align: center;
+    
+}
+.section4-div h6{
+    font-size:16px;
+    font-weight:400;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 16px;
+}
+.section4-div h1{
+    font-size:65px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 65px;
+}
+.section4-div p{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 32px;
+}
+.section4-div button{
+    font-size:16px;
+    font-weight:400;
+    font-style: normal;
+    color: #ffffff;
+    padding: 1em 2em;
+    border: 2px solid rgb(184,142,87);
+    background-color: transparent;
+}
+
+  /* <!-- END OF SECTION4-DIV-> */
+
+ /* <!-- END OF SECTION4 --> */
+
+/* /////////////////////////////////// */
+
+
+
+ /* MEDIA QUERY */
+@media (max-width:1200px) {
+
+    /* /////////////////////// */
+      /* <!-- BEGINNING OF SECTION2-DIV --> */
+    .section2-div{
+        padding:2em 19em;
+    }
+     /* <!-- END OF SECTION2 --> */
+     /* /////////////////////// */
+
+      /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION3 --> */
+    .section3{
+        margin-top: 2em;
+        width: 100%;
+    }
+    /* <!-- BEGINNING OF IMG-TEXT-PARENT --> */
+    .section3 .img-text-parent{
+        width: 90%;
+        margin: auto;
+        padding: 2em;
+    }
+    /* <!-- END OF IMG-TEXT-PARENT --> */
+
+    /* <!-- BEGINNING OF IMG-TEXT-CHILD --> */
+    .section3 .img-text-child{
+        line-height: 2em;
+        text-align: center;
+    }
+    .section3 .img-text-child h6{
+        font-size:16px;
+    }
+    .section3 .img-text-child p{
+        font-size: 14px;
+    }
+    /* <!-- END OF IMG-TEXT-CHILD --> */
+
+    /* <!-- END OF SECTION3 --> */
+    /* /////////////////////////////////// */
+
+    /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION4 --> */
+    .section4{
+        width: 100%;
+        
+    }
+    /* <!-- BEGINNING OF SECTION4-DIV --> */
+    .section4-div{
+        padding:1em 2em 1em 30em;
+        text-align: center;
+        
+    }
+    .section4-div h6{
+        font-size:16px;
+    }
+    .section4-div h1{
+        font-size:65px;
+    }
+    .section4-div p{
+        font-size: 18px;
+    }
+    .section4-div button{
+        font-size:16px;
+    }
+
+    /* <!-- END OF SECTION4-DIV-> */
+
+    /* <!-- END OF SECTION4 --> */
+
+    /* /////////////////////////////////// */
+}
+
+@media (max-width:1000px) {
+
+    /* /////////////////////// */
+     /* <!-- BEGINNING OF SECTION1 --> */
+
+  /* <!-- BEGINNING OF SECTION1-DIV --> */
+    .section1-div{
+        padding:12em 0;
+    }
+    .section1-div p{
+        font-size: 16px;
+    }
+    .section1-div h1{
+        font-size:48px;
+    }
+    /* <!-- END OF SECTION1-DIV2-> */
+
+    /* <!-- END OF SECTION1 --> */
+    /* /////////////////////// */
+
+    /* /////////////////////// */
+     /* <!-- BEGINNING OF SECTION2-DIV --> */
+    .section2-div{
+        padding:2em 11em;
+    }
+     /* <!-- END OF SECTION2 --> */
+     /* /////////////////////// */
+
+           /* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION3 --> */
+    .section3{
+        margin-top: 2em;
+        width: 100%;
+    }
+    /* <!-- BEGINNING OF IMG-TEXT-PARENT --> */
+    .section3 .img-text-parent{
+        width: 90%;
+        margin: auto;
+        padding: 2em;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 5em;
+    }
+    /* <!-- END OF IMG-TEXT-PARENT --> */
+
+    /* <!-- BEGINNING OF IMG-TEXT-CHILD --> */
+    .section3 .img-text-child{
+        line-height: 2em;
+        text-align: center;
+    }
+    .section3 .img-text-child h6{
+        font-size:16px;
+    }
+    .section3 .img-text-child p{
+        font-size: 14px;
+    }
+    /* <!-- END OF IMG-TEXT-CHILD --> */
+
+    /* <!-- END OF SECTION3 --> */
+    /* /////////////////////////////////// */
+
+     /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION4 --> */
+    .section4{
+        width: 100%;
+        
+    }
+    /* <!-- BEGINNING OF SECTION4-DIV --> */
+    .section4-div{
+        padding:1em 2em 1em 20em;
+        text-align: center;
+        
+    }
+    .section4-div h6{
+        font-size:14px;
+    }
+    .section4-div h1{
+        font-size:48px;
+    }
+    .section4-div p{
+        font-size: 16px;
+    }
+    .section4-div button{
+        font-size:14px;
+        padding: 0.8em 1.5em;
+    }
+
+    /* <!-- END OF SECTION4-DIV-> */
+
+    /* <!-- END OF SECTION4 --> */
+
+    /* /////////////////////////////////// */
+}
+
+@media (max-width:767px) {
+
+    /* /////////////////////// */
+      /* <!-- BEGINNING OF SECTION2 --> */
+    .section2{
+        margin-top: 2em;
+    }
+    /* <!-- BEGINNING OF SECTION2-DIV --> */
+    .section2-div{
+        padding:2em ;
+    }
+
+    .section2-div h1{
+        font-size:48px;
+    }
+
+    .section2-div p{
+        font-size: 14px;
+    }
+    /* <!-- END OF SECTION2-DIV-> */
+
+    /* <!-- END OF SECTION2 --> */
+    /* /////////////////////// */
+
+             /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION3 --> */
+
+    /* <!-- BEGINNING OF IMG-TEXT-PARENT --> */
+    .section3 .img-text-parent{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        gap:3em;
+    }
+    /* <!-- END OF IMG-TEXT-PARENT --> */
+
+    /* <!-- END OF SECTION3 --> */
+    /* /////////////////////////////////// */
+
+      /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION4 --> */
+    .section4{
+        width: 100%;
+        
+    }
+    /* <!-- BEGINNING OF SECTION4-DIV --> */
+    .section4-div{
+        padding:1em;
+        text-align: center;
+        
+    }
+    .section4-div h6{
+        font-size:14px;
+    }
+    .section4-div h1{
+        font-size:48px;
+        line-height: 50px;
+    }
+    .section4-div p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .section4-div button{
+        font-size:14px;
+        padding: 0.8em 1.5em;
+    }
+
+    /* <!-- END OF SECTION4-DIV-> */
+
+    /* <!-- END OF SECTION4 --> */
+
+    /* /////////////////////////////////// */
+}
+
+@media (max-width:424px) {
+    
+          /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION4 --> */
+    .section4{
+        width: 100%;
+        
+    }
+    /* <!-- BEGINNING OF SECTION4-DIV --> */
+    .section4-div{
+        padding:1em;
+        text-align: center;
+        
+    }
+    .section4-div h6{
+        font-size:14px;
+    }
+    .section4-div h1{
+        font-size:32px;
+        line-height:40px;
+    }
+    .section4-div p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .section4-div button{
+        font-size:14px;
+        padding: 0.8em 1.5em;
+    }
+
+    /* <!-- END OF SECTION4-DIV-> */
+
+    /* <!-- END OF SECTION4 --> */
+
+    /* /////////////////////////////////// */
+}
+
+@media (max-width:374px) {
+
+    /* /////////////////////// */
+    /* <!-- BEGINNING OF SECTION1 --> */
+
+ /* <!-- BEGINNING OF SECTION1-DIV --> */
+   .section1-div{
+       padding:12em 0;
+   }
+   .section1-div p{
+       font-size: 14px;
+   }
+   .section1-div h1{
+       font-size:32px;
+   }
+   /* <!-- END OF SECTION1-DIV2-> */
+
+   /* <!-- END OF SECTION1 --> */
+   /* /////////////////////// */
+
+   /* /////////////////////// */
+      /* <!-- BEGINNING OF SECTION2 --> */
+      .section2{
+        margin-top: 2em;
+    }
+    /* <!-- BEGINNING OF SECTION2-DIV --> */
+    .section2-div{
+        padding:1em;
+    }
+
+    .section2-div h1{
+        font-size:32px;
+    }
+
+    .section2-div p{
+        font-size: 14px;
+    }
+    /* <!-- END OF SECTION2-DIV-> */
+
+    /* <!-- END OF SECTION2 --> */
+    /* /////////////////////// */
+}
+
+
+
+
+
+/* 
+================================
+===============================
+END OF CONATACT
+================================
+================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=================================
+=================================
+3) ABOUT PAGE
+=================================
+=================================
+*/
+
+
+
+/* BODY */
+.about-body{
+    background-color:rgb(11,21,23);
+}
+ /* BODY */
+
+/* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION1 --> */
+.section1{
+    width: 100%;
+    border: 8px solid rgb(184,142,87);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:100%;
+    background-position-y:100%;
+}
+  /* <!-- BEGINNING OF SECTION1-DIV --> */
+.section1-div{
+    padding:12em 10em;
+}
+.section1-div p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+.section1-div h1{
+    font-size:85px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+  /* <!-- END OF SECTION1-DIV-> */
+
+ /* <!-- END OF SECTION1 --> */
+
+/* /////////////////////////////////// */
+
+/* /////////////////////////////////// */
+  /* <!-- BEGINNING OF SECTION2 --> */
+.section2{
+    width: 100%;
+    margin-top: 3em;
+    border: none;
+}
+  /* <!-- BEGINNING OF SECTION2-DIV --> */
+.section2-div{
+    padding:2em 26em;
+}
+
+.section2-div h1{
+    font-size:65px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+
+.section2-div p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+    line-height: 2em;
+}
+  /* <!-- END OF SECTION2-DIV-> */
+
+ /* <!-- END OF SECTION2 --> */
+ /* /////////////////////////////////// */
+
+ /* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION3 --> */
+.section3{
+    margin-top: 2em;
+    width: 100%;
+}
+/* <!-- BEGINNING OF IMG-TEXT-PARENT --> */
+.section3 .img-text-parent{
+    width: 80%;
+    margin: auto;
+    border: 2px solid rgb(184,142,87);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 4em;
+}
+/* <!-- END OF IMG-TEXT-PARENT --> */
+
+/* <!-- BEGINNING OF IMG-TEXT-CHILD --> */
+.section3 .img-text-child{
+    line-height: 2em;
+    text-align: center;
+}
+.section3 .img-text-child h6{
+    font-size:16px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(184,142,87);
+    text-align: center;
+}
+.section3 .img-text-child p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+}
+/* <!-- END OF IMG-TEXT-CHILD --> */
+
+/* <!-- END OF SECTION3 --> */
+ /* /////////////////////////////////// */
+
+/* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION4 --> */
+ .section4{
+    width: 100%;
+    border: 8px solid rgb(184,142,87);
+    background-image: url("../ASSETS/images/nong-vang-ERzsxOMcC7Q-unsplash-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border: none;
+    margin-top: 4em;
+}
+  /* <!-- BEGINNING OF SECTION4-DIV --> */
+.section4-div{
+    padding:1em 2em 1em 40em;
+    text-align: center;
+    
+}
+.section4-div h6{
+    font-size:16px;
+    font-weight:400;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 16px;
+}
+.section4-div h1{
+    font-size:65px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 65px;
+}
+.section4-div p{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 32px;
+}
+.section4-div button{
+    font-size:16px;
+    font-weight:400;
+    font-style: normal;
+    color: #ffffff;
+    padding: 1em 2em;
+    border: 2px solid rgb(184,142,87);
+    background-color: transparent;
+}
+
+  /* <!-- END OF SECTION4-DIV-> */
+
+ /* <!-- END OF SECTION4 --> */
+
+/* /////////////////////////////////// */
+
+
+
+ /* MEDIA QUERY */
+@media (max-width:1200px) {
+
+    /* /////////////////////// */
+      /* <!-- BEGINNING OF SECTION2-DIV --> */
+    .section2-div{
+        padding:2em 19em;
+    }
+     /* <!-- END OF SECTION2 --> */
+     /* /////////////////////// */
+
+      /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION3 --> */
+    .section3{
+        margin-top: 2em;
+        width: 100%;
+    }
+    /* <!-- BEGINNING OF IMG-TEXT-PARENT --> */
+    .section3 .img-text-parent{
+        width: 90%;
+        margin: auto;
+        padding: 2em;
+    }
+    /* <!-- END OF IMG-TEXT-PARENT --> */
+
+    /* <!-- BEGINNING OF IMG-TEXT-CHILD --> */
+    .section3 .img-text-child{
+        line-height: 2em;
+        text-align: center;
+    }
+    .section3 .img-text-child h6{
+        font-size:16px;
+    }
+    .section3 .img-text-child p{
+        font-size: 14px;
+    }
+    /* <!-- END OF IMG-TEXT-CHILD --> */
+
+    /* <!-- END OF SECTION3 --> */
+    /* /////////////////////////////////// */
+
+    /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION4 --> */
+    .section4{
+        width: 100%;
+        
+    }
+    /* <!-- BEGINNING OF SECTION4-DIV --> */
+    .section4-div{
+        padding:1em 2em 1em 30em;
+        text-align: center;
+        
+    }
+    .section4-div h6{
+        font-size:16px;
+    }
+    .section4-div h1{
+        font-size:65px;
+    }
+    .section4-div p{
+        font-size: 18px;
+    }
+    .section4-div button{
+        font-size:16px;
+    }
+
+    /* <!-- END OF SECTION4-DIV-> */
+
+    /* <!-- END OF SECTION4 --> */
+
+    /* /////////////////////////////////// */
+}
+
+@media (max-width:1000px) {
+
+    /* /////////////////////// */
+     /* <!-- BEGINNING OF SECTION1 --> */
+
+  /* <!-- BEGINNING OF SECTION1-DIV --> */
+    .section1-div{
+        padding:12em 0;
+    }
+    .section1-div p{
+        font-size: 16px;
+    }
+    .section1-div h1{
+        font-size:48px;
+    }
+    /* <!-- END OF SECTION1-DIV2-> */
+
+    /* <!-- END OF SECTION1 --> */
+    /* /////////////////////// */
+
+    /* /////////////////////// */
+     /* <!-- BEGINNING OF SECTION2-DIV --> */
+    .section2-div{
+        padding:2em 11em;
+    }
+     /* <!-- END OF SECTION2 --> */
+     /* /////////////////////// */
+
+           /* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION3 --> */
+    .section3{
+        margin-top: 2em;
+        width: 100%;
+    }
+    /* <!-- BEGINNING OF IMG-TEXT-PARENT --> */
+    .section3 .img-text-parent{
+        width: 90%;
+        margin: auto;
+        padding: 2em;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 5em;
+    }
+    /* <!-- END OF IMG-TEXT-PARENT --> */
+
+    /* <!-- BEGINNING OF IMG-TEXT-CHILD --> */
+    .section3 .img-text-child{
+        line-height: 2em;
+        text-align: center;
+    }
+    .section3 .img-text-child h6{
+        font-size:16px;
+    }
+    .section3 .img-text-child p{
+        font-size: 14px;
+    }
+    /* <!-- END OF IMG-TEXT-CHILD --> */
+
+    /* <!-- END OF SECTION3 --> */
+    /* /////////////////////////////////// */
+
+     /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION4 --> */
+    .section4{
+        width: 100%;
+        
+    }
+    /* <!-- BEGINNING OF SECTION4-DIV --> */
+    .section4-div{
+        padding:1em 2em 1em 20em;
+        text-align: center;
+        
+    }
+    .section4-div h6{
+        font-size:14px;
+    }
+    .section4-div h1{
+        font-size:48px;
+    }
+    .section4-div p{
+        font-size: 16px;
+    }
+    .section4-div button{
+        font-size:14px;
+        padding: 0.8em 1.5em;
+    }
+
+    /* <!-- END OF SECTION4-DIV-> */
+
+    /* <!-- END OF SECTION4 --> */
+
+    /* /////////////////////////////////// */
+}
+
+@media (max-width:767px) {
+
+    /* /////////////////////// */
+      /* <!-- BEGINNING OF SECTION2 --> */
+    .section2{
+        margin-top: 2em;
+    }
+    /* <!-- BEGINNING OF SECTION2-DIV --> */
+    .section2-div{
+        padding:2em ;
+    }
+
+    .section2-div h1{
+        font-size:48px;
+    }
+
+    .section2-div p{
+        font-size: 14px;
+    }
+    /* <!-- END OF SECTION2-DIV-> */
+
+    /* <!-- END OF SECTION2 --> */
+    /* /////////////////////// */
+
+             /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION3 --> */
+
+    /* <!-- BEGINNING OF IMG-TEXT-PARENT --> */
+    .section3 .img-text-parent{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        gap:3em;
+    }
+    /* <!-- END OF IMG-TEXT-PARENT --> */
+
+    /* <!-- END OF SECTION3 --> */
+    /* /////////////////////////////////// */
+
+      /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION4 --> */
+    .section4{
+        width: 100%;
+        
+    }
+    /* <!-- BEGINNING OF SECTION4-DIV --> */
+    .section4-div{
+        padding:1em;
+        text-align: center;
+        
+    }
+    .section4-div h6{
+        font-size:14px;
+    }
+    .section4-div h1{
+        font-size:48px;
+        line-height: 50px;
+    }
+    .section4-div p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .section4-div button{
+        font-size:14px;
+        padding: 0.8em 1.5em;
+    }
+
+    /* <!-- END OF SECTION4-DIV-> */
+
+    /* <!-- END OF SECTION4 --> */
+
+    /* /////////////////////////////////// */
+}
+
+@media (max-width:424px) {
+    
+          /* /////////////////////////////////// */
+    /* <!-- BEGINNING OF SECTION4 --> */
+    .section4{
+        width: 100%;
+        
+    }
+    /* <!-- BEGINNING OF SECTION4-DIV --> */
+    .section4-div{
+        padding:1em;
+        text-align: center;
+        
+    }
+    .section4-div h6{
+        font-size:14px;
+    }
+    .section4-div h1{
+        font-size:32px;
+        line-height:40px;
+    }
+    .section4-div p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .section4-div button{
+        font-size:14px;
+        padding: 0.8em 1.5em;
+    }
+
+    /* <!-- END OF SECTION4-DIV-> */
+
+    /* <!-- END OF SECTION4 --> */
+
+    /* /////////////////////////////////// */
+}
+
+@media (max-width:374px) {
+
+    /* /////////////////////// */
+    /* <!-- BEGINNING OF SECTION1 --> */
+
+ /* <!-- BEGINNING OF SECTION1-DIV --> */
+   .section1-div{
+       padding:12em 0;
+   }
+   .section1-div p{
+       font-size: 14px;
+   }
+   .section1-div h1{
+       font-size:32px;
+   }
+   /* <!-- END OF SECTION1-DIV2-> */
+
+   /* <!-- END OF SECTION1 --> */
+   /* /////////////////////// */
+
+   /* /////////////////////// */
+      /* <!-- BEGINNING OF SECTION2 --> */
+      .section2{
+        margin-top: 2em;
+    }
+    /* <!-- BEGINNING OF SECTION2-DIV --> */
+    .section2-div{
+        padding:1em;
+    }
+
+    .section2-div h1{
+        font-size:32px;
+    }
+
+    .section2-div p{
+        font-size: 14px;
+    }
+    /* <!-- END OF SECTION2-DIV-> */
+
+    /* <!-- END OF SECTION2 --> */
+    /* /////////////////////// */
+}
+
+
+
+
+/* 
+=================================
+=================================
+3) END OF ABOUT PAGE
+=================================
+=================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=================================
+=================================
+4) SIGN UP PAGE
+=================================
+=================================
+*/
+
+
+.sign-up-intro{
+    color: #fff;
+    text-align: center;
+    margin: 1rem;
+}
+
+.sign-up-intro p{
+    font-size: 1.2rem;
+}
+
+.sign-up-body{
+    background-image: url("../ASSETS//images/home-hero-img.jpg");
+    /* background: var(--deep-green); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sign-up{
+
+    width: 50%;
+    margin: 10% auto;
+    color: var(--Orange);
+    border-radius: 0.3em;
+}
+.sign-up h2{
+    /* margin-left: 1em; */
+    /* margin-bottom: 1em; */
+
+    font-size: 40px;
+    color: #fff;
+}
+.sign-up form{
+    padding: 5em;
+    border-radius: 0.8em;
+    background-color: #000000a3;
+    box-shadow: 0 0 10px 0 #fff;
+}
+.sign-up form fieldset{
+    border: none;
+    border-radius: 0.2em;
+}
+.sign-up form fieldset legend{
+    padding: 1em;
+    font-size: 25px;
+    border: none;
+    color: var(--Orange);
+}
+.sign-up form fieldset input{
+    width: 100%;
+    height: 5vh;
+    padding: 30px;
+    outline: 0;
+    margin-bottom: 1em;
+    font-size: 18px;
+    color: var(--Orange);
+    border-radius: 0.2em;
+    border: none;
+}
+.sign-up form fieldset a{
+    font-weight: 600;
+    font-size: 18px;
+}
+.sign-up form fieldset #ckeck{
+    height: initial;
+    width: initial;
+}
+
+.sign-up form fieldset button{
+    padding: 0.6em 3em;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 0.5em;
+    border-radius: 0.2em;
+    border: none;
+    color: var(--Orange);
+}
+.sign-up form fieldset p a{
+    color: var(--Orange);
+}
+
+
+
+/* 
+=================================
+=================================
+4) END OF SIGN UP PAGE
+=================================
+=================================
+*/
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=================================
+=================================
+5) ERROR PAGE
+=================================
+=================================
+*/
+
+
+
+
+
+
+
+
+/* 
+=================================
+=================================
+5) END OF  ERROR PAGE
+=================================
+=================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=================================
+=================================
+6) SUCCESS PAGE
+=================================
+=================================
+*/
+
+
+.success-body{
+    background-color: green;
+}
+
+
+.wrapper{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    color: #fff;
+}
+
+.text{
+    width: 50%;
+}
+
+.text h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper p{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+/* 
+=================================
+=================================
+6) END OF SUCCESS PAGE
+=================================
+=================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=================================
+=================================
+7) RECIPES ====> TEMPLATES PAGE
+=================================
+=================================
+*/
+ 
+
+
+.templates{
+    padding: 2rem !important;
+}
+
+
+
+
+
+
+/* 
+=================================
+=================================
+7) RECIPES ====> END OF TEMPLATES PAGE
+=================================
+=================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=================================
+=================================
+8) SERVICES PAGE
+=================================
+=================================
+*/
+
+
+
+
+/* END UNIVERSAL SELECTOR */
+
+/* BODY */
+.services-body{
+    background-color:rgb(11,21,23);
+}
+ /* BODY */
+
+/* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION1 --> */
+ .services-body  .section1{
+    width: 100%;
+    border: red 2px solid;
+    border: 8px solid rgb(184,142,87);
+    background-image:linear-gradient( rgba(0, 0, 0.141), #0b15179f, rgba(0, 0, 0, 0.141)), url(../ASSETS/images/home-hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+  /* <!-- BEGINNING OF SECTION1-DIV --> */
+.section1-div{
+    padding:12em 10em;
+}
+.section1-div p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+    line-height: 32px;
+}
+.section1-div h1{
+    font-size:85px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+  /* <!-- END OF SECTION1-DIV-> */
+
+ /* <!-- END OF SECTION1 --> */
+
+/* /////////////////////////////////// */
+
+/* /////////////////////////////////// */
+ /* <!-- BEGINNING OF SECTION2 --> */
+.section2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border:none;
+    row-gap: 3rem;
+    margin-top: 3em;
+    padding: 3rem 0;
+}
+
+.section2 .child1{
+    width:50%;
+    border:none;
+}
+.section2 .child1 img{
+    height: 100%;
+    width:100%;
+    padding:0 3em 0 4em;
+}
+
+.section2 .child2{
+    width: 50%;
+    border:none;
+    text-align: justify;
+    padding: 0 4em;
+}
+
+.section2 .child2 h1{
+
+        font-size:45px;
+        font-weight: 700;
+        font-style: normal;
+        color: #ffffff;
+        opacity: 1;
+    
+}
+.section2 .child2 p{
+
+    font-size:16px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    opacity: 1;
+    text-align: start;
+    line-height: 29px;
+}
+.section2 .child2 table{
+    width: 100%;
+    margin: 2rem 0;
+    
+}
+
+.section2 .child2 table tr td{
+    padding:1em;
+    line-height: 2em;
+}
+.section2 .child2 table tr td h6{
+    font-size:32px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ca9c5e;
+    opacity: 1;
+    text-align: start;
+    line-height: 29px;
+}
+.section2 .child2 table tr td p{
+    font-size:16px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    opacity: 1;
+    line-height: 29px;
+}
+/* <!-- END OF SECTION1 --> */
+
+/* /////////////////////////////////// */
+
+@media (max-width:1200px) {
+
+     /* <!-- BEGINNING OF SECTION2 --> */
+.section2{
+    display: flex;
+}
+
+.section2 .child1{
+    width:50%;
+    border:none;
+}
+.section2 .child1 img{
+    height: 100%;
+    width:100%;
+    padding:0 1em 0 2em;
+}
+
+.section2 .child2{
+    width: 50%;
+    padding: 0 1em;
+}
+
+.section2 .child2 h1{
+    font-size:38px;
+}
+.section2 .child2 p{
+    font-size:14px;
+}
+.section2 .child2 table{
+    width: 100%;
+    
+}
+
+.section2 .child2 table tr td{
+    padding:0.5em;
+    line-height: 2em;
+}
+.section2 .child2 table tr td h6{
+    font-size:20px;
+}
+.section2 .child2 table tr td p{
+    font-size:14px;
+}
+/* <!-- END OF SECTION1 --> */
+
+}
+@media (max-width:1000px) {
+       /* /////////////////////// */
+     /* <!-- BEGINNING OF SECTION1 --> */
+
+  /* <!-- BEGINNING OF SECTION1-DIV --> */
+    .section1-div{
+        padding:12em 0;
+    }
+    .section1-div p{
+        font-size: 16px;
+    }
+    .section1-div h1{
+        font-size:48px;
+    }
+    /* <!-- END OF SECTION1-DIV2-> */
+
+    /* <!-- END OF SECTION1 --> */
+    /* /////////////////////// */
+}
+@media (max-width:767px) {
+         /* <!-- BEGINNING OF SECTION2 --> */
+.section2{
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.section2 .child1{
+    order: 2;
+    width:100%;
+    border:none;
+}
+.section2 .child1 img{
+    height: 100%;
+    width:100%;
+    padding:0 1em 0 1em;
+}
+
+.section2 .child2{
+    width: 100%;
+    padding: 0 1em;
+}
+
+.section2 .child2 h1{
+    font-size:38px;
+}
+.section2 .child2 p{
+    font-size:14px;
+}
+.section2 .child2 table{
+    width: 100%;
+    
+}
+
+.section2 .child2 table tr td{
+    padding:0.5em;
+}
+.section2 .child2 table tr td h6{
+    font-size:18px;
+}
+.section2 .child2 table tr td p{
+    font-size:14px;
+}
+/* <!-- END OF SECTION1 --> */
+}
+@media (max-width:374px) {
+       /* /////////////////////// */
+    /* <!-- BEGINNING OF SECTION1 --> */
+
+    /* <!-- BEGINNING OF SECTION1-DIV --> */
+    .section1-div{
+        padding:12em 0;
+    }
+    .section1-div p{
+        font-size: 14px;
+    }
+    .section1-div h1{
+        font-size:32px;
+    }
+    /* <!-- END OF SECTION1-DIV2-> */
+
+    /* <!-- END OF SECTION1 --> */
+    /* /////////////////////// */
+}
+
+
+/* 
+=================================
+=================================
+8) MENUS ====> END OF SERVICES PAGE
+=================================
+=================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=================================
+=================================
+9) ORDER ====> ORDER TEMPLATE PAGE
+=================================
+=================================
+*/
+
+
+
+
+/* BODY */
+.order-body{
+    background-color:rgb(11,21,23);
+}
+/* BODY */
+  /* <!-- BEGINNING OF FORM --> */
+  .order-form-field{
+    border: none;
+    width: 50%;
+    padding: 3em ;
+    background-color: rgba(0, 0, 0, 0.233);
+    z-index: 1999;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.425);
+    border-radius: 25px;
+    margin: auto;
+}
+
+
+
+.order-texts{
+    text-align: center;
+    padding: 2rem 0;
+    color: #b37627;
+}
+
+.order-texts h1{
+    font-size: 3rem;
+}
+
+.order-texts p{
+    font-size: 1.5rem;
+}
+
+
+ .order-form-field form  input{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color:#ffffff;
+    border-radius: 5px;
+}
+ .order-form-field form  input:focus{
+    outline: none;
+}
+ .order-form-field form label{
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    font-family: PinterestSansPro, sans-serif;
+    padding-top: 2em;
+}
+ .order-form-field form .button{
+    padding: 0.4em 0.8em;
+    background-color:transparent;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    border:2px solid #ffffff;
+    border-radius: 5px;
+}
+/* <!-- END OF FORM --> */
+
+
+
+/* 
+=================================
+=================================
+9) END OF ORDER PAGE
+=================================
+=================================
+*/
+
+
+
+
+/* 
+==============================
+==============================
+10) BLOG
+==============================
+==============================
+*/
+
+    .article{
+        padding: 3rem 0;
+    }
+
+    .article-con{
+        width: var(--width);
+        margin: 2rem auto;
+        display: flex;
+        gap: 3rem;
+
+    }
+
+
+    .articles-title{
+        font-size: 3rem;
+        width: var(--width);
+        margin: auto;
+
+        column-gap: var(--deep-green);
+    }
+
+    .article-left{
+        width: 70%;
+    }
+
+    .post{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        background: #eee;
+        margin: 1rem 0;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-bottom: 1px solid --deep-green;
+    }
+
+    
+
+    .post-left{
+        width: 200px;
+
+    }
+
+    .post-left img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    .article-right{
+        background-color: #eee;
+        padding: 1rem;
+        width: 25%;
+    }
+
+    .article-right>div{
+        margin: 1.5rem 0;
+        cursor: pointer;
+    }
+
+    .article-right h5{
+        margin: 0.5rem 0;
+    }
+
+    .article-btn{
+        width: 50%;
+        /* padding: 1rem 2rem; */
+        font-size: 1.5rem;
+    }
+
+    .article span{
+        color: #999;
+    }
+
+    .sponsored-img{
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+
+    .sponsored-img img{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+.reservation-hero{
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1), #0b15179f, rgba(0, 0, 0, 0.141)), url(https://cdn.pixabay.com/photo/2015/06/01/09/04/blog-793047_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    background-repeat: no-repeat;
+}
+
+.reservation-hero .hero-explore-btn{
+    border-width: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+==============================
+==============================
+10) RESERVATION =====> END OF  BLOG  
+==============================
+==============================
+*/
